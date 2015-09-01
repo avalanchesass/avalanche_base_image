@@ -1,0 +1,28 @@
+/**
+ * Image
+ *
+ * Basic image styling / responsive images
+ *
+ * @level X.X.
+ */
+@if $base-image-responsive {
+  /**
+   * Responsive image
+   *
+   * Keep images from scaling beyond the width of their parents.
+   *
+   * @level X.X.X.
+   */
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @if $base-image-responsive-gmap-fix {
+    // Google Map fix
+    .gmap img {
+      max-width: none;
+    }
+  }
+}

@@ -5,6 +5,12 @@
  *
  * @level X.X.
  */
+// Variables
+$base-image-responsive: true;
+$base-image-responsive-gmap-fix: false;
+
+
+
 @if $base-image-responsive {
   /**
    * Responsive image
